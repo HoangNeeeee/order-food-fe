@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Home() {
 	return (
 		<main className="bg-gradient-to-b from-[#462B9C] to-[#644AB5] flex w-full h-screen px-10 flex-col justify-center items-center">
