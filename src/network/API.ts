@@ -1,4 +1,4 @@
-import { Response } from "@/model";
+import { MenuItem, Response } from "@/model";
 import Endpoint from "./Endpoint";
 import ApiManager from "./APIManager";
 import { AxiosRequestConfig } from "axios";
@@ -48,6 +48,10 @@ class API {
 
 	login = (params: unknown): Promise<Response<unknown>> => {
 		return this.publicClient.post<Response<unknown>>(Endpoint.LOGIN, {});
+	};
+
+	getFoodMenu = (): Promise<Response<MenuItem[]>> => {
+		return this.publicClient.post<Response<MenuItem[]>>(Endpoint.FOOD_MENU, {});
 	};
 }
 

@@ -7,8 +7,11 @@ const getInstance = (baseURL: string, withToken = true) => {
 	const instance = axios.create({
 		baseURL: baseURL,
 		timeout: 60000,
+		withCredentials: false,
 		headers: {
-			"Content-Type": "application/json",
+			"Content-Type": "application/json;charset=utf-8",
+			Accept: "*/*",
+			"Access-Control-Allow-Origin": "*",
 		},
 	});
 
