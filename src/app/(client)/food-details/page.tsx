@@ -1,11 +1,17 @@
-import { Popular } from "@/components/Popular";
+import { Popular } from "@/components";
 import Image from "next/image";
 export default function Detail() {
 	return (
 		<main className=" h-screen bg-gradient-to-b from-[#462B9C] to-[#644AB5D9] flex flex-col justify-center">
 			<div className="px-9 py-14 flex justify-center">
-				<a href="/menu" className="absolute top-9 left-9">
-					<Image className="flex" src="/Arrowback.svg" alt="Arrowback" width={32} height={32} />
+				<a href="/" className="absolute top-9 left-9">
+					<Image
+						className="flex font-bold text-2xl font-poppins"
+						src="/Arrowback.svg"
+						alt="Arrowback"
+						width={32}
+						height={32}
+					/>
 				</a>
 				<Image className="mt-12" src="/BurgerSandwich.png" alt="Burger" width={280} height={210} />
 			</div>

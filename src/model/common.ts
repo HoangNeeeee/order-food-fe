@@ -1,8 +1,8 @@
 export interface Response<T> {
-	data?: T;
+	responseData?: T;
 	error?: ErrorResponse;
-	responseCode?: string;
-	message?: string;
+	statusCode?: number;
+	message?: string | 'sucess' | 'fail';
 }
 
 export interface ErrorResponse {
