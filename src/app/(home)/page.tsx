@@ -14,17 +14,7 @@ export default function Home() {
 	const menuList = useMemo(() => menuRes?.responseData ?? [], [menuRes]);
 
 	return (
-		<main className="px-5 pt-5 pb-10">
-			{/* {menuList.map((item) => {
-				return <Food src={item.image} title={item.title} />;
-			})} */}
-			<div className="flex mb-">
-				<FontAwesomeIcon className="flex justify-center mt-2" icon={faBars} />
-				<h1 className="pl-4 mb-4 w-[230px] h-[62px] text-2xl font-bold font-montserrat text-[#000]">
-					Find Your Favorite Meal
-				</h1>
-				<a href="/profile"></a>
-			</div>
+		<>
 			<div className="relative flex  bg-[#eeeeee] px-3 w-[358px] h-[58px] rounded-[30px] outline-none flex-row items-center justify-start">
 				<img className="w-8 h-8" src="Search.svg" />
 				<input className="w-full bg-[#eeeeee] ml-2" placeholder="Search" />
@@ -80,6 +70,6 @@ export default function Home() {
 					</div>
 				);
 			})}
-		</main>
+		</>
 	);
 }
