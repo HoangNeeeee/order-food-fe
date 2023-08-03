@@ -10,7 +10,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				</h1>
 				<a href="/profile"></a>
 			</header>
-			<main className="px-5 pt-5 pb-10">{children}</main>
+			<main className="">{children}</main>
 		</>
 	);
 }

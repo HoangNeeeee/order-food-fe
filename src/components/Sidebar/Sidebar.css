@@ -1,9 +1,12 @@
 .bm-burger-button {
-	position: relative;
+	position: absolute;
 	width: 30px;
 	height: 26px;
 	left: 24px;
 	top: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Color/shape of burger icon bars */

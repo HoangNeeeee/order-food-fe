@@ -7,5 +7,5 @@ export interface MenuItem {
 	createdAt?: string;
 	updatedAt?: string;
 	type?: string;
-	image?: string;
+	image?: string;  
 }
