@@ -50,8 +50,12 @@ class API {
 		return this.publicClient.post<Response<unknown>>(Endpoint.LOGIN, {});
 	};
 
-	getFoodMenu = (): Promise<Response<MenuItem[]>> => {
-		return this.publicClient.post<Response<MenuItem[]>>(Endpoint.FOOD_MENU, {});
+	getSidebarMenu = (): Promise<Response<MenuItem[]>> => {
+		return this.publicClient.get<Response<MenuItem[]>>(Endpoint.SIDEBAR_MENU, {});
+	};
+
+	createMenu = (): Promise<Response<MenuItem>> => {
+		return this.publicClient.post<Response<MenuItem>>(Endpoint.CREATE_SIDEBAR_MENU, {});
 	};
 }
 

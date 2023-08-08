@@ -1,6 +1,7 @@
 const Endpoint = {
 	LOGIN: "/api2/auth/login",
-	FOOD_MENU: "/food/menu",
+	SIDEBAR_MENU: "/v1/menu",
+	CREATE_SIDEBAR_MENU: "/v1/menu/create",
 };
 
 export default Endpoint;

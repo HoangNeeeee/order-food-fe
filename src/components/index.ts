@@ -4,3 +4,4 @@ export * from "./Food";
 export * from "./Popular";
 export * from "./FAIcon";
 export * from "./Sidebar";
+export * from "./ContacItems";

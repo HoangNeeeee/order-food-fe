@@ -1,5 +1,7 @@
-import { useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery } from "@tanstack/react-query";
 import API from "../API";
 import { QueryKey } from "./QueryKey";
 
-export const useGetFoodMenu = () => useQuery([QueryKey.FOOD_MENU], () => API.getFoodMenu());
+export const useGetSidebarMenu = () => useQuery([QueryKey.SIDEBAR_MENU], () => API.getSidebarMenu());
+
+export const useCreateMenu = () => useMutation(() => API.createMenu());

@@ -1,3 +1,5 @@
+const { hostname } = require('os');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	images: {
@@ -5,11 +7,13 @@ const nextConfig = {
 			{
 				protocol: "https",
 				hostname: "i.imgflip.com",
+				protocol: "https",
+				hostname: "jollibee.com.vn",
 			},
 		],
 	},
 	env: {
-		API_BASE_URL: "http://209.97.168.217:5000/",
+		API_BASE_URL: "http://209.97.168.217:5000/api",
 	},
 	typescript: {
 		// !! WARN !!

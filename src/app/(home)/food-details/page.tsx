@@ -4,15 +4,9 @@ export default function Detail() {
 	return (
 		<main className=" h-screen bg-gradient-to-b from-[#462B9C] to-[#644AB5D9] flex flex-col justify-center">
 			<div className="px-9 py-14 flex justify-center">
-				{/* <a href="/" className="absolute top-9 left-9">
-					<Image
-						className="flex font-bold text-2xl font-poppins"
-						src="/Arrowback.svg"
-						alt="Arrowback"
-						width={32}
-						height={32}
-					/>
-				</a> */}
+				<a href="/" className="absolute top-16 left-9">
+					<Image className="flex" src="/Arrowback.svg" alt="Arrowback" width={24} height={24} />
+				</a>
 				<Image className="mt-12" src="/BurgerSandwich.png" alt="Burger" width={280} height={210} />
 			</div>
 			<div className="bg-white w-100% h-[482px] rounded-tl-[70px] px-9 py-12 text-black">
@@ -41,8 +35,8 @@ export default function Detail() {
 					Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders
 					and a rating of 4.8 since it’s introduction. no dull yourself oh!!
 				</h1>
-				<div className="flex justify-between">
-					<div className="flex gap-2 mt-[39px]">
+				<div className="flex justify-between mt-[39px]">
+					<div className="flex gap-2">
 						<button className="bg-[#FFEDED] w-[32px] h-[26px] text-[18px] text-[#F10027] font-medium flex justify-center items-center rounded-2xl">
 							{" "}
 							-{" "}
@@ -53,7 +47,7 @@ export default function Detail() {
 							+{" "}
 						</button>
 					</div>
-					<h1 className="flex mt-[39px]">$12</h1>
+					<h1 className="flex">$12</h1>
 				</div>
 				<div className="flex justify-center items-center mt-[25px]">
 					<button className="flex justify-center items-center bg-[#F10027] w-[290px] h-[72px] rounded-3xl font-montserrat2 text-[20px] font-semibold text-white">

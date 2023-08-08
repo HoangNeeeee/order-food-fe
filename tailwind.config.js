@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: '#F10027',
+        primaryText: "#263238"
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -16,6 +20,7 @@ module.exports = {
         poppins: "'Poppins', sans-serif",
         montserrat: "'Montserrat', sans-serif",
         montserrat2: "'Montserrat Alternates', sans-serif",
+        nigger: "'Black Han Sans', sans-serif",
       },
     },
   },

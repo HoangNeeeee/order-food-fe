@@ -1,3 +1,3 @@
 export const QueryKey = {
-	FOOD_MENU: "FOOD_MENU",
+	SIDEBAR_MENU: "SIDEBAR_MENU",
 };
