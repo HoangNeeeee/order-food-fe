@@ -22,13 +22,13 @@ export const ContactForm = () => {
 	const onSubmit = (data: any) => console.log(data);
 	return (
 		<fieldset className="gap-4 flex flex-col">
-			<div className="flex justify-between">
+			<div className="flex gap-5">
 				<div>
 					<input
 						className="bg-red w-[170px] h-[53px] border-gray-500 border-2 rounded-lg px-2"
 						placeholder="Tên*"
 						{...register("username")}
-					/> 
+					/>
 					<p className="text-red-500">{errors.username?.message}</p>
 				</div>
 				<div>
@@ -37,7 +37,7 @@ export const ContactForm = () => {
 						placeholder="Số điện thoại*"
 						{...register("phonenumber")}
 					/>
-					<p className="text-red-500 w-[170px]">{errors.phonenumber?.message}</p>
+					<p className="text-red-500">{errors.phonenumber?.message}</p>
 				</div>
 			</div>
 			<div>

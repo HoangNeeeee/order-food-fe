@@ -1,20 +1,17 @@
-"use client";
 import { Popular } from "@/components";
 import Image from "next/image";
-import { useState } from "react";
 export default function Detail() {
-	const [count, setCount] = useState(1);
 	return (
 		<main className=" h-screen bg-gradient-to-b from-[#462B9C] to-[#644AB5D9] flex flex-col justify-center">
 			<div className="px-9 py-14 flex justify-center">
-				<a href="/menu" className="absolute top-16 left-9">
+				<a href="/" className="absolute top-16 left-9">
 					<Image className="flex" src="/Arrowback.svg" alt="Arrowback" width={24} height={24} />
 				</a>
 				<Image className="mt-12" src="/BurgerSandwich.png" alt="Burger" width={280} height={210} />
 			</div>
 			<div className="bg-white w-100% h-[482px] rounded-tl-[70px] px-9 py-12 text-black">
 				<div className="flex">
-					<h1 className="font-montserrat w-[230px] h-[31px] text-[24px] font-bold">Beef Burger </h1>
+					<h1 className="font-montserrat w-[230px] h-[31px] text-[24px] font-bold">Chicken Burger </h1>
 					<div>
 						<Image className="mr-3" src="LocationIcon.svg" alt="locationlogo" width={34} height={34} />
 					</div>
@@ -40,25 +37,17 @@ export default function Detail() {
 				</h1>
 				<div className="flex justify-between mt-[39px]">
 					<div className="flex gap-2">
-						<button
-							onClick={() => {
-								if (count > 1) setCount(count - 1);
-							}}
-							className="bg-[#FFEDED] w-[32px] h-[26px] text-[18px] text-[#F10027] font-medium flex justify-center items-center rounded-2xl"
-						>
+						<button className="bg-[#FFEDED] w-[32px] h-[26px] text-[18px] text-[#F10027] font-medium flex justify-center items-center rounded-2xl">
 							{" "}
 							-{" "}
 						</button>
-						<h1>{count}</h1>
-						<button
-							onClick={() => setCount(count + 1)}
-							className="bg-[#FFEDED] w-[32px] h-[26px] text-[18px] pb-[2px] text-[#F10027] font-medium flex justify-center items-center rounded-2xl"
-						>
+						<h1>1</h1>
+						<button className="bg-[#FFEDED] w-[32px] h-[26px] text-[18px] text-[#F10027] font-medium flex justify-center items-center rounded-2xl">
 							{" "}
 							+{" "}
 						</button>
 					</div>
-					<h1 className="flex">$ {12 * count}</h1>
+					<h1 className="flex">$12</h1>
 				</div>
 				<div className="flex justify-center items-center mt-[25px]">
 					<button className="flex justify-center items-center bg-[#F10027] w-[290px] h-[72px] rounded-3xl font-montserrat2 text-[20px] font-semibold text-white">
