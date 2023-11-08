@@ -21,6 +21,8 @@ module.exports = {
         montserrat: "'Montserrat', sans-serif",
         montserrat2: "'Montserrat Alternates', sans-serif",
         nigger: "'Black Han Sans', sans-serif",
+        roboto: "'Roboto', sans-serif",
+        inter: "'Inter', sans-serif",
       },
     },
   },

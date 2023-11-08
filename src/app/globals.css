@@ -1,9 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url(https://db.onlinewebfonts.com/c/870c14ea660dc49cbcf9c92af21392af?family=Merge+Black+W00+Regular);
 
  /* add the code bellow */
 @layer utilities {
+    html{
+        font-family: MergeBlack;
+    }
     @variants responsive {
       /* Hide scrollbar for Chrome, Safari and Opera */
       .no-scrollbar::-webkit-scrollbar {

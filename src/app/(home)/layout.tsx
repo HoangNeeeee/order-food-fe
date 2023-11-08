@@ -1,4 +1,5 @@
 import { Sidebar } from "@/components";
+import Footer from "@/components/Footer";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
@@ -7,6 +8,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<Sidebar />
 			</header>
 			<main className="">{children}</main>
+			<Footer />
 		</>
 	);
 }
