@@ -25,7 +25,9 @@ export default function Home(this: any) {
 				<div className="flex flex-col items-center font-montserrat font-bold">
 					<h1 className="text-[#FFFBFB] w-[130px] h-[50px]">50% off special deal in Febuary</h1>
 					<button className="flex justify-center items-center rounded-2xl mt-2 w-[100px] h-[43px] bg-[#FFC42E]">
-						<h1>Buy Now</h1>
+						<a href="/menu">
+							<h1>Buy Now</h1>
+						</a>
 					</button>
 				</div>
 			</div>
